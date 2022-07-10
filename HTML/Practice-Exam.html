@@ -60,9 +60,13 @@
         // when the button with id b1-2 is clicked and change the paragraph with id p1-2 text
         // to "The quick brown fox jumped over the lazy dog"
         // 1. create a click listener for the button and use an anonymous function
-        // 2. in the anonymous function, get a variable for the p with id p1-2
-        // 3. set the p's innerText
-
+        let BTN1 = document.getElementById("b1-2")
+        BTN1.addEventListener("click", function() {
+          // 2. in the anonymous function, get a variable for the p with id p1-2
+          let foxText = document.getElementById("p1-2")
+          // 3. set the p's innerText
+          foxText.innerHTML = "The quick brown fox jumped over the lazy dog"
+        })
 
         // problem #3
         // change the anchor with id a1-3's href to "https://java.codeup.com"
