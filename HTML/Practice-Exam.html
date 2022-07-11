@@ -56,7 +56,7 @@
         // 2. change its text using
         document.getElementById("h1-1").innerHTML = "Hello World!"
 
-        // problem #2
+        // (DONE) problem #2
         // when the button with id b1-2 is clicked and change the paragraph with id p1-2 text
         // to "The quick brown fox jumped over the lazy dog"
         // 1. create a click listener for the button and use an anonymous function
@@ -68,10 +68,13 @@
           foxText.innerHTML = "The quick brown fox jumped over the lazy dog"
         })
 
-        // problem #3
+        // (DONE) problem #3
         // change the anchor with id a1-3's href to "https://java.codeup.com"
         // 1. get a reference to the anchor
+        let link = document.getElementById("a1-3")
         // 2. use setAttribute on its href
+        link.setAttribute("href", "https://java.codeup.com")
+        //can also do document.getElementById("a1-3").href = "https://java.codeup.com" to obtain the same results
 
         // problem #4
         // change the background of the body to green
