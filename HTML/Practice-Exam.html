@@ -83,13 +83,17 @@
         // 2. set backgroundColor property of its style property to "green"
         body.style.backgroundColor = "green"
 
-        // problem #5
+        // (DONE) problem #5
         // when the button with id b5, toggle the hotpinkText class for the h1 with id h1-1
         // 1. get a reference for the button
+        let BTN2 = document.getElementById("b5")
         // 2. add an event listener to the button
-        // 3. in the event listener, get a reference for the h1
-        // 4. toggle the class on the h1 object
-
+        BTN2.addEventListener("click", function() {
+          // 3. in the event listener, get a reference for the h1
+          let header = document.querySelector("#h1-1")
+          // 4. toggle the class on the h1 object
+          header.classList.toggle("hotpinkText")
+        })
 
         // problem 6: add 5px red border to paragraph with id p6 when you hover over it
         // and remove the border when you stop hovering over it
