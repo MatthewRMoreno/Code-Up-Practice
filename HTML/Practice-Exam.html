@@ -77,11 +77,18 @@
         //can also do document.getElementById("a1-3").href = "https://java.codeup.com" to obtain the same results
 
         // (DONE) problem #4
-        // change the background of the body to green
+        // when the body is clicked change the background of the body to navajo white
         // 1. get a reference to the body
-        let body = document.querySelector("body")
-        // 2. set backgroundColor property of its style property to "green"
-        body.style.backgroundColor = "green"
+        let myBody = document.querySelector("body")
+        // 2. set backgroundColor property of its style property to "navajo white"
+        // myBody.addEventListener("click", function() {
+          // if(this.style.backgroundColor === "navajowhite") {
+          //   this.style.backgroundColor = ""
+          // } else {
+          //   this.style.backgroundColor = "navajowhite"
+            myBody.style.backgroundColor = "navajowhite"
+          // }
+        // })
 
         // (DONE) problem #5
         // when the button with id b5, toggle the hotpinkText class for the h1 with id h1-1
@@ -100,27 +107,34 @@
         // you can use the red-border class to make this a little easier
         // 1. make event handlers for mouseenter and mouseleave for paragraph p4
         let paragraph = document.getElementById("p6")
-        paragraph.onmouseenter = function () {
-          this.classList.toggle("red-border")
-        }
-        paragraph.onmouseleave = function () {
-          this.classList.toggle("none")
-        }
+        paragraph.addEventListener("mouseenter", function(event) {
+          paragraph.classList.add("red-border")
+        });
+        paragraph.addEventListener("mouseleave", function() {
+          paragraph.classList.remove("red-border")
+        })
+        // paragraph.onmouseenter = function () {
+        //   this.classList.toggle("red-border")
+        // }
+        // paragraph.onmouseleave = function () {
+        //   this.classList.toggle("none")
+        // }
         // 2. use style property on p6 (or use the this keyword) and set border to "5px solid red"
 
         //      you could also add or toggle the class "red-border"
 
 
-        // problem 7: when the user types in the text input with id "input7"
+        // (NEEDS WORK) problem 7: when the user types in the text input with id "input7"
         // , copy what was typed into the paragraph with id p7
         // 1. get a reference to the text field with id input7
-        let textField = document.getElementById("input7")
         // 2. add a key event listener to the text field
-        textField.addEventListener("keydown", function () {
         // 3. inside the event listener, get a reference to the paragraph p7
-
         // 4. set the paragraph's text to the input's VALUE property
-
+        //   paragraph.setAttribute("value", "")
+        let textField = document.getElementById("text7")
+        textField.addEventListener("input", function(event) {
+          let inputValue = textField.value;
+          document.getElementById("p7").innerHTML = inputValue
       })
 
       });
