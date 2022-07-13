@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Star Wars 2</title>
+    <link href="starwars-style-2.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="fade"></div>
+  
+    <section class="star-wars">
+      
+      <div class="crawl">
+  
+        <div class="title">
+          <p>Episode title</p>
+          <h1>episode subtitle</h1>
+        </div>
+  
+          <p>The main text will be going here</p>
+          <p>some more text can go here</p>
+          <p>some more text can go here</p>
+
+      </div>
+      
+    </section>
+  <script>
+    
+    let stars = 200;
+
+    for (let i = 0; i < stars; i++) {
+      let star = document.createElement("div")
+      star.className = 'stars'
+      let xy = randomPosition();
+      star.style.top = xy[0] + 'px'
+      star.style.left = xy[1] + 'px'
+      document.body.append(star)
+    }
+    
+    function positionStars() {
+      let y = window.innerWidth
+      let x = window.innerHeight
+      let xPosition = Math.floor(Math.random() * x)
+      let yPosition = Math.floor(Math.random() * y)
+      return [xPosition, yPosition]
+    }
+    
+  </script>
+  </body>
+</html>
