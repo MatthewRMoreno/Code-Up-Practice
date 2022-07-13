@@ -104,7 +104,7 @@ p {
     left: 50%;
     margin-left: -10em;
     z-index: 0;
-    transform: perspective(350px) rotateX(25deg);
+    transform: perspective(450px) rotateX(20deg);
     transform-origin: 50% 100%;
 }
 
