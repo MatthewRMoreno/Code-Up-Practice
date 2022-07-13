@@ -31,7 +31,7 @@ body::after {
 .intro {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: rgb(75, 213, 238);
@@ -40,7 +40,7 @@ body::after {
     font-size: 3.25rem;
     width: 80%;
     opacity: 0;
-    animation: intro 6s ease-out 0.5s;
+    animation: intro 7s ease-out 0.5s;
 }
 
 @keyframes intro {
@@ -66,7 +66,7 @@ body::after {
     z-index: 2;
     width: 100%;
     opacity: 0;
-    animation: logo 10s ease-out 9s;
+    animation: logo 12s ease-out 9s;
 }
 
 .logo img {
@@ -120,7 +120,7 @@ p {
 #content {
     position: absolute;
     top: 100%;
-    animation: scroller 90s linear 15s;
+    animation: scroller 90s linear 8s;
 }
 
 @keyframes scroller {
