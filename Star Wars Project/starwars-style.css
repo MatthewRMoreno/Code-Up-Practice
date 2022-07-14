@@ -110,11 +110,15 @@ p {
 
 #scroller::after {
     position: absolute;
-    content: "";
-    bottom: 60%;
-    left: 0;
-    right: 0;
-    top: 0;
+    bottom: 40%;
+    right: 40%;
+    left: 40%;
+    top: 40%;
+    /*content: "";*/
+    /*bottom: 60%;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 0;*/
 }
 
 #content {
