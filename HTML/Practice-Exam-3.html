@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Exam 3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  // function findMin(arr) {
+  //   let theMin = 99999
+  //
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i] < theMin) {
+  //       return theMin[i] = arr;
+  //     }
+  //   }
+  // }
+  //
+  // let minAge = minAge(c)
+  //
+  // let returnVal = analyzePeople(b);
+  // console.log(returnVal);
+  //
+  // function analyzePeople(ppl) {
+  //     let minAge = findMinAge(ppl)
+  //
+  //     return "analyzed people and min age is " + minAge;
+  // }
+  
+  let pizza = {
+      crust: "thin",
+      cheese: "magnificent",
+      toppings: [
+          "corn",
+          "onions"
+      ]
+  }
+  console.log(pizza)
+  
+  let pizzaFun = makePizza("thin", "cheddar", ["corn", "onions"])
+  console.log(pizzaFun)
+  
+  function makePizza(crust, cheese, toppings) {
+      //All 3 of the ways of writing out the function will produce the same results
+      // let newPizza = {};
+      // newPizza.crust = crust;
+      // newPizza.cheese = cheese;
+      // newPizza.toppings = toppings;
+      //-------------------------------
+      // let newPizza = {
+      //     crust,
+      //     cheese,
+      //     toppings
+      // }
+      //--------------------------------
+      return {
+          crust,
+          cheese,
+          toppings
+      };
+  }
+  //-----------------------------
+  let leeroy = {
+      name: "Leeroy Jenkins",
+      age: 75,
+      job: "Paladin"
+  }
+  
+  printPerson(leeroy);
+  
+  function printPerson(person) {
+      console.log("Person's name: " + person.name);
+      console.log("Age: " + person.age);
+      console.log("Job :" + person.job);
+  }
+  
+  //return true if a < b, else false
+  function lessThan(a, b) {
+      if (a < b) {
+          return true;
+      }else {
+          return false;
+      }
+  }
+  //----------------------------------
+  //changing a parameters value
+  let d = 10
+  foo(d);
+  console.log(d);
+  
+  function foo(aNum) {
+      aNum = 20;
+      return true;
+  }
+  
+  let array1 = [1, 2, 3];
+  foo2(array1);
+  console.log(foo2);
+  
+  function foo2(arr) {
+      arr[0] = 5;
+      arr[1] = 6;
+      arr[2] = 7;
+      return true;
+  }
+
+</script>
